@@ -44,28 +44,34 @@ Búscalos con `[` en `index.html`. Siguen sin definir:
 
 | Marcador | Dónde | Qué va |
 | --- | --- | --- |
-| `NUMERO_WHATSAPP` | 12 botones | Celular sin +57 ni espacios, ej. `3001234567` |
 | `[CIUDADES]` | Hero, Cómo pedir, FAQ | Ciudades con domicilio |
 | `[presentación]` | Arequipe sin azúcar | Tamaño del frasco |
 | `[NOMBRE DE LA FINCA / MUNICIPIO]` | Origen | Nombre de la finca |
-| `[Reseña de cliente]`, `[Nombre]`, `[Ciudad]` | Testimonios | 3 reseñas reales |
 | `[Confirmar temperaturas.]` | FAQ | Temperaturas de conservación |
 | `[X] días`, `[X] semanas` | FAQ | Duración de cada producto |
 | `[Costo o pedido mínimo.]` | FAQ | Si cobras domicilio |
 | `[Nequi, Daviplata…]` | FAQ | Formas de pago reales |
 | `[Vereda / Municipio]` | Footer | Dirección a mostrar |
-| `[RSA-XXXXXX-AAAA]` | Footer | Registro sanitario INVIMA |
 
-El número de WhatsApp aparece 12 veces, así que cámbialo de una vez desde la terminal:
-
-```bash
-sed -i 's/NUMERO_WHATSAPP/3001234567/g' index.html
-grep -c NUMERO_WHATSAPP index.html   # debe decir 0
-```
+El número de WhatsApp (+57 313 7733719) ya está puesto en los 11 botones, el pie de página y los datos estructurados.
 
 ### Mensajes de WhatsApp
 
 Cada botón abre un mensaje distinto, escrito en la parte `?text=…` del enlace y codificado para URL. Si quieres cambiar un texto, usa un codificador de URL: espacio = `%20`, coma = `%2C`, á = `%C3%A1`, é = `%C3%A9`, ñ = `%C3%B1`.
+
+### Secciones retiradas a propósito
+
+Dos cosas se quitaron porque mostrarlas sin datos reales resta credibilidad. Ambas siguen en el historial de git y se reponen en un minuto:
+
+- **Testimonios** (`<!-- 6. TESTIMONIOS -->`): vuelve cuando tengas tres reseñas reales de clientes, con nombre y ciudad.
+- **Registro sanitario INVIMA** (pie de página): vuelve cuando tengas el número asignado. No publiques un número inventado en un producto alimenticio.
+
+Para recuperar el bloque original de testimonios:
+
+```bash
+git log --oneline -- index.html      # busca el commit anterior al de "Retirar testimonios"
+git show <commit>:index.html         # copia de ahi la seccion
+```
 
 ## Cómo cambiar las fotos
 
