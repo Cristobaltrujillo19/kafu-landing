@@ -40,15 +40,11 @@ Todo el contenido está en `index.html`. Ábrelo con cualquier editor de texto y
 
 ### Textos pendientes
 
-Búscalos con `[` en `index.html`. Siguen sin definir:
+Ninguno. Todos los textos de la página tienen datos reales.
 
-| Marcador | Dónde | Qué va |
-| --- | --- | --- |
-| `[presentación]` | Arequipe sin azúcar | Tamaño del frasco |
-| `[NOMBRE DE LA FINCA / MUNICIPIO]` | Origen | Nombre de la finca |
-| `[Vereda / Municipio]` | Footer | Dirección a mostrar |
+Lo único que falta son **las 3 fotos de la finca** en la sección Origen (ver más abajo), que hoy se ven como recuadros grises con borde punteado.
 
-El número de WhatsApp (+57 313 7733719) ya está puesto en los 10 botones, el pie de página y los datos estructurados.
+Datos ya aplicados: WhatsApp +57 313 7733719 · Instagram @lacteoskafu · finca La Fortuna, Alejandría (Antioquia) · domicilios en el Área Metropolitana y el Oriente antioqueño · arequipes de 380 g, yogur de 500 g, kéfir de 500 ml y 1 L.
 
 ### Mensajes de WhatsApp
 
