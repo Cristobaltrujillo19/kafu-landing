@@ -44,16 +44,11 @@ Búscalos con `[` en `index.html`. Siguen sin definir:
 
 | Marcador | Dónde | Qué va |
 | --- | --- | --- |
-| `[CIUDADES]` | Hero, Cómo pedir, FAQ | Ciudades con domicilio |
 | `[presentación]` | Arequipe sin azúcar | Tamaño del frasco |
 | `[NOMBRE DE LA FINCA / MUNICIPIO]` | Origen | Nombre de la finca |
-| `[Confirmar temperaturas.]` | FAQ | Temperaturas de conservación |
-| `[X] días`, `[X] semanas` | FAQ | Duración de cada producto |
-| `[Costo o pedido mínimo.]` | FAQ | Si cobras domicilio |
-| `[Nequi, Daviplata…]` | FAQ | Formas de pago reales |
 | `[Vereda / Municipio]` | Footer | Dirección a mostrar |
 
-El número de WhatsApp (+57 313 7733719) ya está puesto en los 11 botones, el pie de página y los datos estructurados.
+El número de WhatsApp (+57 313 7733719) ya está puesto en los 10 botones, el pie de página y los datos estructurados.
 
 ### Mensajes de WhatsApp
 
@@ -65,6 +60,7 @@ Dos cosas se quitaron porque mostrarlas sin datos reales resta credibilidad. Amb
 
 - **Testimonios** (`<!-- 6. TESTIMONIOS -->`): vuelve cuando tengas tres reseñas reales de clientes, con nombre y ciudad.
 - **Registro sanitario INVIMA** (pie de página): vuelve cuando tengas el número asignado. No publiques un número inventado en un producto alimenticio.
+- **Preguntas frecuentes** (`<!-- 7. PREGUNTAS FRECUENTES -->`): cuatro de las cinco respuestas seguían sin datos reales (duración, pagos, costo del domicilio, temperaturas). La quinta, la de intolerancia a la lactosa, sí estaba completa y vale la pena recuperarla cuando repongas la sección.
 
 Para recuperar el bloque original de testimonios:
 
